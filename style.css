@@ -1,8 +1,9 @@
 body {
   animation: theme 21s linear infinite;
-   
-  
+  color: white ;
+  font-family: 'Alegreya Sans', sans-serif;
 }
+
 
 body:after, body:before {
   content: '';
@@ -66,10 +67,18 @@ body:before {
 }
 
 .header__name {
-    position: relative;
+    font-family: 'Raleway', sans-serif;   
     margin-right: auto;
-    font-size: 36px;
+    margin-top: 20px;
+    font-size: 48px;
     font-weight: thin;
-    letter-spacing: 0.08em;
-    margin-top: 40px;
+    letter-spacing: 0.05em;
+    color: white;
+    display: inline-block;
+
 }
+
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
