@@ -144,6 +144,7 @@ span.text-content {
   position: absolute;
   top: 0;
   width: 64px;
+  font-size: 20px;
 }
 
 span.text-content span {
@@ -192,26 +193,35 @@ span.text-content {
     width: 58px;
     height: 72px;
     border-radius: 100%;
-    margin-top: 35px;
+    margin-left: 20px;
 }
 
 #aboutme p {
     font-family: 'Open Sans', sans-serif;
     color: white ;
     float: right ;
-    width : 850px;
-    margin-right: 200px;
+    max-width: 1000px;   
     font-size: 17px;
 }
-#aboutme h4 {
+.container  h4 {
     font-family: 'Open Sans', sans-serif;
     color: white ;
-    float: right ;
-    width : 850px;
-    margin-right: 170px;
     font-size: 25px;
     text-align: center;
 }
+
+#contact {
+    font-family: 'Open Sans', sans-serif;
+    color: white ;
+}
+
+ul#normal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 
 font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
