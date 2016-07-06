@@ -117,93 +117,75 @@ article h1 {
     margin: 10px 10px 10px 10px;
 }
 
-.hero__skill svg {
-  stroke: #fff;
-  stroke-width: 1px;
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  -webkit-animation: line 2s linear forwards;
-  animation: line 2s linear forwards;
+ul.skill-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
 }
 
-@media (max-width: 639px) {
-  .hero__skill svg {
-    max-width: 10vw;
-    max-height: 9vw;
-  }
-}
-@media (max-width: 449px) {
-  .hero {
-    padding: 0 25px 45px;
-  }
-
-  .hero__heading {
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-
-  .hero__skills {
-    margin-top: 50px;
-  }
-
-  .hero__skill svg {
-    max-width: 30px;
-    max-height: 24px;
-    stroke-width: 2px;
-  }
-}
-@-webkit-keyframes line {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes line {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.hero__skill:nth-child(2) svg {
-  -webkit-animation-delay: .6s;
-  animation-delay: 0.6s;
-}
-
-.hero__skill:nth-child(3) svg {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-}
-
-.hero__skill:nth-child(4) svg {
-  -webkit-animation-delay: 1.8s;
-  animation-delay: 1.8s;
-}
-
-.hero__skill:nth-child(5) svg {
-  -webkit-animation-delay: 2.4s;
-  animation-delay: 2.4s;
-}
-
-.hero__skill:nth-child(6) svg {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    
-}
-
-li {
-    display: inline;
-    padding-right: 20px;
+ul.skill-icons li {
+  display: inline-block;
+  height: 64px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 64px;
 }
 
 
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+  opacity: 0;
+}
+
+ul.skill-icons li:hover span.text-content {
+  opacity: 1;
+}
+
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
 
 font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
