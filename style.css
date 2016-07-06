@@ -4,8 +4,16 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+.themed {
+    animation: theme 21s linear infinite;
+    color: white;
+    display: inline-block;
+    padding: 13px;
+    text-align: center;
+}
 
-body:after, body:before {
+
+body:after, body:before, .themed:after, .themed:before {
   content: '';
   display: block;
   position: fixed;
@@ -26,6 +34,16 @@ body:before {
   animation-delay: -30s;
   animation-direction: reverse;
 }
+
+.themed:after {
+  left: 15vw;
+}
+.themed:before {
+  right: 15vw;
+  animation-delay: -30s;
+  animation-direction: reverse;
+}
+
 
 @keyframes theme {
   0% {
@@ -66,10 +84,10 @@ body:before {
   }
 }
 
-.header__name {
+
+
+ .header__name {
     font-family: 'Raleway', sans-serif;   
-    margin-right: auto;
-    margin-top: 20px;
     font-size: 48px;
     font-weight: thin;
     letter-spacing: 0.05em;
@@ -77,6 +95,115 @@ body:before {
     display: inline-block;
 
 }
+
+header {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.03em;
+    color: white;
+    display: inline-block;
+}
+article {
+    background-color: white;
+    height: 500px;
+    text-align: center;
+}
+
+article h1 {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    margin: 10px 10px 10px 10px;
+}
+
+.hero__skill svg {
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation: line 2s linear forwards;
+  animation: line 2s linear forwards;
+}
+
+@media (max-width: 639px) {
+  .hero__skill svg {
+    max-width: 10vw;
+    max-height: 9vw;
+  }
+}
+@media (max-width: 449px) {
+  .hero {
+    padding: 0 25px 45px;
+  }
+
+  .hero__heading {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .hero__skills {
+    margin-top: 50px;
+  }
+
+  .hero__skill svg {
+    max-width: 30px;
+    max-height: 24px;
+    stroke-width: 2px;
+  }
+}
+@-webkit-keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.hero__skill:nth-child(2) svg {
+  -webkit-animation-delay: .6s;
+  animation-delay: 0.6s;
+}
+
+.hero__skill:nth-child(3) svg {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.hero__skill:nth-child(4) svg {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.hero__skill:nth-child(5) svg {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+.hero__skill:nth-child(6) svg {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+li {
+    display: inline;
+    padding-right: 20px;
+}
+
+
 
 font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
