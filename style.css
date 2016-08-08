@@ -87,7 +87,7 @@ body:before {
 
 
  .header__name {
-    font-family: 'Raleway', sans-serif;   
+    font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: thin;
     letter-spacing: 0.05em;
@@ -107,7 +107,7 @@ header {
 }
 article {
     background-color: white;
-    height: 500px;
+
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ ul.skill-icons {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
+
 }
 
 ul.skill-icons li {
@@ -200,7 +200,7 @@ span.text-content {
     font-family: 'Open Sans', sans-serif;
     color: white ;
     float: right ;
-    max-width: 1000px;   
+    max-width: 1000px;
     font-size: 17px;
 }
 .container  h4 {
@@ -220,6 +220,10 @@ ul#normal {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.panel-group {
+    width: 100%;
 }
 
 
