@@ -10,7 +10,9 @@
     text-align: center;
 }
 
-
+.navbar-brand{
+    height: auto;
+}
 
 .themed:after, .themed:before {
   content: '';
@@ -119,7 +121,7 @@ a:hover {
 
 /* portfolio */
 .themed .portfolio-item .portfolio-desc {
-	background: #35A49C;
+	background: rgba(38, 198, 218, 0.4);
 }
 
 /* btn */
