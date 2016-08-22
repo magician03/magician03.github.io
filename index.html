@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
@@ -8,48 +9,114 @@
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Josefin+Sans|Roboto:300,400|Open+Sans:300|Raleway:300" rel="stylesheet">
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/ddbc2277f8.js"></script>
 	<script src="https://use.fontawesome.com/ddbc2277f8.js"></script>
 	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 </head>
+
 <body>
-		<header>
-			<span class="header__name">Diwakar Moturu</span><br/><br/>
-			<span class="skills">Web Developer.</span><br/>
-			<span class="skills">Open Source Enthusiast. Technology Hacker.</span><br/><br/>
-			<ul class="skill-icons">
-            <li> <img src="node.png"> <span class="text-content"><span>NodeJS</span></span> </li>
-            <li> <img src="c-logo.png"><span class="text-content"><span>C++</span></span> </li>
-            <li> <img src="python-snake.png"> <span class="text-content"><span>Python</span></span></li>
-            <li> <img src="html-5-logo.png"><span class="text-content"><span>HTML5</span></span> </li>
-            <li> <img src="js.png"> <span class="text-content"><span>JavaScript</span></span></li>
-            <li> <img src="atom.png"><span class="text-content"><span>React</span></span> </li>
-        	</ul>
-		</header>
-		<article>
-			<div class="container">
-				<h1><span class="themed">Projects</span></h1>
-                <p>Website under construction, details yet to be updated, checkout <a href="https://www.github.com/magician03">Github</a> for my projects.
-			</div>
+	<div class="header">
+    <div class="container clearfix">
+        <h1 id="logo"> LOGO </h1>
+        <nav>
+            <a href="">Lorem</a>
+            <a href="">Ipsum</a>
+            <a href="">Dolor</a>
+        </nav>
+    </div>
+</div>
+	<header>
+		<span class="header__name">Diwakar Moturu</span>
+		<br/>
+		<br/>
+		<span class="skills">Web Developer.</span>
+		<br/>
+		<span class="skills">Open Source Enthusiast. Technology Hacker.</span>
+		<span id="typed" style="white-space:pre;"></span>
+		<br/>
+		<br/>
+		<div class="element"></div>
+		<ul class="skill-icons">
+			<li> <img src="node.png"> <span class="text-content"><span>NodeJS</span></span>
+			</li>
+			<li> <img src="c-logo.png"><span class="text-content"><span>C++</span></span>
+			</li>
+			<li> <img src="python-snake.png"> <span class="text-content"><span>Python</span></span>
+			</li>
+			<li> <img src="html-5-logo.png"><span class="text-content"><span>HTML5</span></span>
+			</li>
+			<li> <img src="js.png"> <span class="text-content"><span>JavaScript</span></span>
+			</li>
+			<li> <img src="atom.png"><span class="text-content"><span>React</span></span>
+			</li>
+		</ul>
+	</header>
+	<article>
+		<div class="container">
+			<h1><span class="themed">Projects</span></h1>
+			<p>Website under construction, details yet to be updated, checkout <a href="https://www.github.com/magician03">Github</a> for my projects.
+		</div>
 
-		</article>
-		<footer class="container">
+	</article>
+	<footer class="container">
 
-					<div id="aboutme">
-					<h4> About Me</h4> <img src="me1.jpg" id="dp"/>
-						<p>I am studying in Indian Institute of Information Technology, Allahabad India; currently enrolled in Information Technology undergrad course, class of 2019. I love to develop web-apps and contribute to open-source. In leisure, I play computer games, watch regional movies, read Tech blogs and watch YouTube.</p><br/><br/><br/><br/>
-					</div>
-					<div id="contact">
-						<h4> Contact </h4>
-						<ul id="normal">
-							<li>Email: diwakar03121997@gmail.com</li>
-							<li>Whatsapp: 8465878058</li>
-						</ul>
+		<div id="aboutme">
+			<h4> About Me</h4> <img src="me1.jpg" id="dp" />
+			<p>I am studying in Indian Institute of Information Technology, Allahabad India; currently enrolled in Information Technology undergrad course, class of 2019. I love to develop web-apps and contribute to open-source. In leisure, I play computer games,
+				watch regional movies, read Tech blogs and watch YouTube.</p>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+		<div id="contact">
+			<h4> Contact </h4>
+			<ul id="normal">
+				<li>Email: diwakar03121997@gmail.com</li>
+				<li>Whatsapp: 8465878058</li>
+			</ul>
 
-					</div>
+		</div>
 
-			</footer>
+	</footer>
+	<div id="typed-strings">
+                <span>Typed.js is a <strong>jQuery</strong> plugin.</span>
+                <p>It <em>types</em> out sentences.</p>
+                <p>And then deletes them.</p>
+                <p>Try it out!</p>
+            </div>
+	<script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+
+</body>
 
 
 
