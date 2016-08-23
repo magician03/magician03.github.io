@@ -12,6 +12,15 @@ body {
     text-align: center;
 }
 
+iframe{
+    width: 300px;
+    height: 20px;
+}
+
+span{
+    min-width: 300px;
+    min-height: 20px;
+}
 
 body:after, body:before, .themed:after, .themed:before {
   content: '';
