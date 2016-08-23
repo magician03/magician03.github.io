@@ -22,6 +22,10 @@ span{
     min-height: 20px;
 }
 
+#portfolio{
+    z-index: 20;
+}
+
 body:after, body:before, .themed:after, .themed:before {
   content: '';
   display: block;
@@ -44,10 +48,24 @@ body:before {
   animation-direction: reverse;
 }
 
-.themed:after {
+
+.themed-bg:after, .themed-bg:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  width: 100vmax;
+  height: 100vmax;
+  background: rgba(0, 0, 0, 0.05);
+  animation: background 90s linear infinite;
+}
+
+.themed:after, .themed-bg:after {
   left: 15vw;
 }
-.themed:before {
+.themed:before, .themed-bg::before {
   right: 15vw;
   animation-delay: -30s;
   animation-direction: reverse;
@@ -262,8 +280,7 @@ ul#normal {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
-    background-color: #3b8dbd;
+    background: rgba(0, 0, 0, 0.3);
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
