@@ -1,3 +1,4 @@
+<script>
 $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -8,3 +9,4 @@ $(function() {
         }
     });
 });
+</script>
