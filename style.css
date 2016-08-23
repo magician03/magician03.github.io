@@ -84,6 +84,9 @@ body:before {
   }
 }
 
+#type{
+    text-align: center;
+}
 
 
  .header__name {
@@ -104,6 +107,7 @@ header {
     letter-spacing: 0.03em;
     color: white;
     display: inline-block;
+    height: 95vh;
 }
 article {
     background-color: white;
@@ -119,7 +123,6 @@ article h1 {
 
 ul.skill-icons {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 
 }
@@ -263,10 +266,10 @@ ul#normal {
     height: 50px;
     float: left;
     margin-left:20px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     color: white;
-    font-weight: 200;
+    font-weight: 20;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -281,6 +284,7 @@ ul#normal {
 }
 .header nav a {
     line-height: 85px;
+    font-family: 'Open Sans', sans-serif;
     margin-left: 20px;
     color: #9fdbfc;
     font-weight: 700;
@@ -301,6 +305,7 @@ ul#normal {
     width: 85px;
     height: 55px;
     font-size: 30px;
+    margin-top: 10px;
 }
 .header.smaller nav a {
     line-height: 55px;

@@ -19,27 +19,25 @@
 
 <body>
 	<div class="header themed">
-    <div class="container clearfix">
-		
-        <h1 id="logo"> LOGO </h1>
-        <nav>
-            <a href="">Lorem</a>
-            <a href="">Ipsum</a>
-            <a href="">Dolor</a>
-        </nav>
-    </div>
-</div>
+		<div class="container clearfix">
+
+			<h1 id="logo"> DIWAKAR MOTURU </h1>
+			<nav>
+				<a href="#home">Home</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#about">About</a>
+			</nav>
+		</div>
+	</div>
 	<header>
-		<span class="header__name">Diwakar Moturu</span>
-		<br/>
-		<br/>
-		<span class="skills">Web Developer.</span>
-		<br/>
-		<span class="skills">Open Source Enthusiast. Technology Hacker.</span>
-		<span id="typed" style="white-space:pre;"></span>
-		<br/>
-		<br/>
-		<div class="element"></div>
+		<div class="container">
+			<br/>
+			<div id="type"><span id="typed-1" style="white-space:pre;"></span></div>
+
+
+		</div>
+
+		<!--<div class="element"></div>
 		<ul class="skill-icons">
 			<li> <img src="node.png"> <span class="text-content"><span>NodeJS</span></span>
 			</li>
@@ -53,7 +51,7 @@
 			</li>
 			<li> <img src="atom.png"><span class="text-content"><span>React</span></span>
 			</li>
-		</ul>
+		</ul>-->
 	</header>
 	<article>
 		<div class="container">
@@ -83,39 +81,42 @@
 		</div>
 
 	</footer>
-	<div id="typed-strings">
-                <span>Typed.js is a <strong>jQuery</strong> plugin.</span>
-                <p>It <em>types</em> out sentences.</p>
-                <p>And then deletes them.</p>
-                <p>Try it out!</p>
-            </div>
+	<div id="typed-strings-1">
+		<span>Hi There !</span>
+		<p>Welcome to ^200<em>magician03 ^200</em> 's Arena</p>
+	</div>
 	<script>
-    $(function(){
+		$(function() {
 
-        $("#typed").typed({
-            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-            stringsElement: $('#typed-strings'),
-            typeSpeed: 30,
-            backDelay: 500,
-            loop: false,
-            contentType: 'html', // or text
-            // defaults to false for infinite loop
-            loopCount: false,
-            callback: function(){ foo(); },
-            resetCallback: function() { newTyped(); }
-        });
+			$("#typed-1").typed({
+				// strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+				stringsElement: $('#typed-strings-1'),
+				typeSpeed: 30,
+				backDelay: 500,
+				loop: false,
+				contentType: 'html', // or text
+				// defaults to false for infinite loop
+				loopCount: false,
+				callback: function() {
+					foo();
+				},
+				resetCallback: function() {
+					newTyped();
+				}
+			});
 
-        $(".reset").click(function(){
-            $("#typed").typed('reset');
-        });
+			$(".reset").click(function() {
+				$("#typed").typed('reset');
+			});
 
-    });
+		});
 
-    function newTyped(){ /* A new typed object */ }
+		function newTyped() { /* A new typed object */ }
 
-    function foo(){ console.log("Callback"); }
-
-    </script>
+		function foo() {
+			console.log("Callback");
+		}
+	</script>
 
 </body>
 
