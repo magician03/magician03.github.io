@@ -14,6 +14,10 @@ header, .navbar-custom, #about {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+.fb-like {
+    margin-top: 100px;
+}
+
 header:after, header:before, #about:before, #about:after{
   content: '';
   display: block;
