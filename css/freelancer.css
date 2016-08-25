@@ -27,6 +27,10 @@ header, .navbar-custom, #about {
     margin-top: 100px;
 }
 
+#skills{
+    font-size: 35px;
+}
+
 #typing{
     font-size: 30px;
 }
@@ -169,6 +173,18 @@ header:before, .navbar-custom:before, #about:before{
     background-color: white;
 }
 
+#skillIcons li{
+    list-style-type: none;
+    display: inline;
+    font-size: 60px;
+    padding-right: 20px;
+
+}
+
+#skillIcons{
+    padding: 15px;
+}
+
 p {
   font-size: 20px;
 }
@@ -234,19 +250,16 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 80px;
 }
 header img {
   display: block;
   margin: 0 auto 20px;
 }
 header .intro-text .name {
-  display: block;
   font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 150;
+  font-size: 1.3em;
 }
 header .intro-text .typed {
   font-size: 1.25em;
@@ -254,7 +267,7 @@ header .intro-text .typed {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
+    padding-top: 130px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
