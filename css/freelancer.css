@@ -14,12 +14,25 @@ header, .navbar-custom, #about {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.modal-body .themed-text {
+  animation: themed 21s linear infinite;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#profile {
+    border-radius: 100%;
+}
+
 .fb-like {
     margin-top: 100px;
 }
 
 #typing{
     font-size: 30px;
+}
+
+header{
+    height: 100vh;
 }
 
 header:after, header:before, #about:before, #about:after{
@@ -36,6 +49,22 @@ header:after, header:before, #about:before, #about:after{
   animation: background 90s linear infinite;
 }
 
+.modal-body .themed-text:before, .modal-body .themed-text:after{
+  content: '';
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  width: 100vmax;
+  height: 100vmax;
+  background: rgba(0, 0, 0, 0.05);
+  animation: background 90s linear infinite;
+}
+
+
+
 .navbar-custom:after, .navbar-custom:before{
     content: '';
     display: block;
@@ -44,7 +73,6 @@ header:after, header:before, #about:before, #about:after{
     top: 0;
     background: rgba(0, 0, 0, 0.05);
     animation: background 90s linear infinite;
-    opacity: 0;
 }
 
 header:after, .navbar-custom:after, #about:after {
@@ -86,6 +114,45 @@ header:before, .navbar-custom:before, #about:before{
 
   100% {
     background: #74C390;
+  }
+}
+@keyframes background {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes themed {
+  0% {
+    color: #74C390;
+  }
+
+  16% {
+    color: #5DBDB6;
+  }
+
+  33% {
+    color: #59D4E1;
+  }
+
+  50% {
+    color: #51BCE8;
+  }
+
+  66% {
+    color: #FA5374;
+  }
+
+  83% {
+    color: #E46653;
+  }
+
+  100% {
+    color: #74C390;
   }
 }
 @keyframes background {
