@@ -92,15 +92,31 @@
                                 <p>build^300</p>
                                 <p>hack^300</p>
                                 <p>create^300</p>
+                                <p>imagine^300</p>
                                 <p>innovate^300</p>
                                 <p>love^300</p>
                                 <p>write^300</p>
                                 <p>read^300</p>
                                 <p>integrate^300</p>
                             </div>
+                            <div id="typed-icons">
+                                <p><i class="devicon-nodejs-plain-wordmark"></i>^500</p>
+                                <p><i class="devicon-mongodb-plain-wordmark"></i>^500</p>
+                                <p><i class="devicon-react-original-wordmark"></i>^500</p>
+                                <p><i class="devicon-html5-plain-wordmark"></i>^500</p>
+                                <p><i class="devicon-css3-plain-wordmark"></i>^500</p>
+                                <p><i class="devicon-bootstrap-plain-wordmark"></i>^500</p>
+                                <p><i class="devicon-javascript-plain"></i>^500</p>
+                                <p><i class="devicon-python-plain-wordmark"></i>^500</p>
+                                <p><i class="devicon-php-plain"></i>^500</p>
+                                <p><i class="devicon-mysql-plain-wordmark"></i>^500</p>
+                            </div>
                             <span id="typing">I <span id="typed" style="white-space:pre;"></span> stuff</span>
                         </div>
                         <span id="skills">Web Development; UI-Design; Open Sources</span>
+                        <ul id="skillIcons">
+                            <li><span id="typedIcons" style="white-space:pre;"></span></li>
+                        </ul>
                         <!--<ul id="skillIcons">
                             <li><i class="devicon-nodejs-plain-wordmark"></i></li>
                             <li><i class="devicon-mongodb-plain-wordmark"></i></li>
@@ -577,7 +593,7 @@
             loop: true,
             contentType: 'html', // or text
             // defaults to false for infinite loop
-            loopCount: 100000,
+            loopCount: false,
             callback: function(){ foo(); },
             resetCallback: function() { newTyped(); }
         });
@@ -587,6 +603,25 @@
         });
 
     });
+
+    $("#typedIcons").typed({
+        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+        stringsElement: $('#typed-icons'),
+        typeSpeed: 3,
+        backDelay: 500,
+        loop: true,
+        contentType: 'html', // or text
+        showCursor: false,
+        // defaults to false for infinite loop
+        loopCount: false,
+        callback: function(){ foo(); },
+        resetCallback: function() { newTyped(); }
+    });
+
+    $(".reset").click(function(){
+        $("#typedIcons").typed('reset');
+    });
+
 
     function newTyped(){ /* A new typed object */ }
 
