@@ -27,13 +27,12 @@ header, .navbar-custom, #about {
     margin-top: 100px;
 }
 
-#skills{
-    font-size: 35px;
+#about{
+  min-height: 100vh;
 }
 
-#typing{
-    font-size: 30px;
-}
+
+
 
 header{
     height: 100vh;
@@ -141,6 +140,7 @@ animation: AnimationName 25s ease infinite;
 
 #contact {
     background-color: white;
+    min-height: 100vh;
 }
 
 #skillIcons li{
@@ -166,7 +166,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: rgba(230, 230, 230, 0.3);
   outline: none;
 }
 h1,
@@ -175,8 +175,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  
   font-weight: 700;
 }
 hr.star-light,
@@ -202,7 +202,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: rgba(230, 230, 230, 0.3);
   color: white;
 }
 hr.star-primary {
@@ -227,15 +227,17 @@ header img {
   margin: 0 auto 20px;
 }
 header .intro-text .name {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 150;
-  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
 }
-header .intro-text .typed {
-  font-size: 1.25em;
-  font-weight: 300;
+header #typing {
+  font-size: 1.5em;
+  
 }
-@media (min-width: 768px) {
+header .intro-text #skills {
+  font-size: 1.75em;
+}
+@media (min-width: 600px) {
   header .container {
     padding-top: 130px;
     padding-bottom: 100px;
@@ -243,12 +245,16 @@ header .intro-text .typed {
   header .intro-text .name {
     font-size: 4.75em;
   }
-  header .intro-text .typed {
+  header #typing {
     font-size: 1.75em;
   }
+  header .intro-text #skills {
+    font-size: 2.25em;
+  }
+  
 }
 .navbar-custom {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -272,7 +278,7 @@ header .intro-text .typed {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: rgba(230, 230, 230, 0.3);
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -288,7 +294,7 @@ header .intro-text .typed {
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: rgba(230, 230, 230, 0.3);
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -298,9 +304,9 @@ header .intro-text .typed {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: rgba(230, 230, 230, 0.3);
   color: white;
-  border-color: #18BC9C;
+  border-color: rgba(230, 230, 230, 0.3);
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -330,7 +336,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background: rgba(230, 230, 230, 0.3);
   color: white;
 }
 @media (max-width: 767px) {
@@ -352,7 +358,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(200, 200, 200, 0.5);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -433,7 +439,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: rgba(230, 230, 230, 0.3);
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -467,7 +473,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
+  color: rgba(230, 230, 230, 0.3);
   background: white;
   border: solid 2px white;
 }
@@ -515,8 +521,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: rgba(230, 230, 230, 0.3);
+  border-color: rgba(230, 230, 230, 0.3);
   font-weight: 700;
 }
 .btn-success:hover,
@@ -548,11 +554,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: rgba(230, 230, 230, 0.3);
+  border-color: rgba(230, 230, 230, 0.3);
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: rgba(230, 230, 230, 0.3);
   background-color: white;
 }
 .btn-social {
