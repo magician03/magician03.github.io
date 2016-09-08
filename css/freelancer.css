@@ -39,18 +39,18 @@ header{
     height: 100vh;
 }
 
-header:after, header:before, #about:before, #about:after{
+header, #about{
   content: '';
   display: block;
-  position: fixed;
   z-index: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  width: 100vmax;
-  height: 100vmax;
-  background: rgba(0, 0, 0, 0.05);
-  animation: background 90s linear infinite;
+ 
+  background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 25s ease infinite;
+-moz-animation: AnimationName 25s ease infinite;
+animation: AnimationName 25s ease infinite;
 }
 
 .modal-body .themed-text:before, .modal-body .themed-text:after{
@@ -59,76 +59,46 @@ header:after, header:before, #about:before, #about:after{
   position: fixed;
   z-index: -1;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  width: 100vmax;
-  height: 100vmax;
+  
   background: rgba(0, 0, 0, 0.05);
-  animation: background 90s linear infinite;
 }
 
 
 
-.navbar-custom:after, .navbar-custom:before{
+
+.navbar-custom{
     content: '';
     display: block;
     position: fixed;
-    z-index: -1;
+  
     top: 0;
-    background: rgba(0, 0, 0, 0.05);
-    animation: background 90s linear infinite;
-}
+    background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 600% 600%;
 
-header:after, .navbar-custom:after, #about:after {
-  left: 13vw;
-}
-header:before, .navbar-custom:before, #about:before{
-  right: 13vw;
-  animation-delay: -30s;
-  animation-direction: reverse;
+-webkit-animation: AnimationName 25s ease infinite;
+-moz-animation: AnimationName 25s ease infinite;
+animation: AnimationName 25s ease infinite;
 }
 
 
-
-
-@keyframes theme {
-  0% {
-    background: #74C390;
-  }
-
-  16% {
-    background: #5DBDB6;
-  }
-
-  33% {
-    background: #59D4E1;
-  }
-
-  50% {
-    background: #51BCE8;
-  }
-
-  66% {
-    background: #FA5374;
-  }
-
-  83% {
-    background: #E46653;
-  }
-
-  100% {
-    background: #74C390;
-  }
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
 }
-@keyframes background {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
 }
+@keyframes AnimationName { 
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+
+
+
 
 @keyframes themed {
   0% {
@@ -278,7 +248,6 @@ header .intro-text .typed {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;

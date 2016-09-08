@@ -26,50 +26,60 @@ span{
     z-index: 20;
 }
 
-body:after, body:before, .themed:after, .themed:before {
+#mainNav{
+  z-index:1000;
+}
+
+body, .themed {
   content: '';
   display: block;
   position: fixed;
   z-index: -1;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  width: 100vmax;
-  height: 100vmax;
-  background: rgba(0, 0, 0, 0.05);
-  animation: background 90s linear infinite;
-}
-body:after {
-  left: 15vw;
-}
-body:before {
-  right: 15vw;
-  animation-delay: -30s;
-  animation-direction: reverse;
+
+  background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 25s ease infinite;
+-moz-animation: AnimationName 25s ease infinite;
+animation: AnimationName 25s ease infinite;
 }
 
 
-.themed-bg:after, .themed-bg:before {
+
+.themed-bg {
   content: '';
   display: block;
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  width: 100vmax;
-  height: 100vmax;
-  background: rgba(0, 0, 0, 0.05);
-  animation: background 90s linear infinite;
+  background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 25s ease infinite;
+-moz-animation: AnimationName 25s ease infinite;
+animation: AnimationName 25s ease infinite;
+
+  
+  
 }
 
-.themed:after, .themed-bg:after {
-  left: 15vw;
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
 }
-.themed:before, .themed-bg::before {
-  right: 15vw;
-  animation-delay: -30s;
-  animation-direction: reverse;
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
 }
+@keyframes AnimationName { 
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+
+
 
 
 @keyframes theme {
