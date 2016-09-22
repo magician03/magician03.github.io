@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-header, .navbar-custom, #about {
+header, #about {
   animation: theme 21s linear infinite;
   color: white ;
   font-family: 'Josefin Sans', sans-serif;
@@ -33,6 +33,9 @@ header, .navbar-custom, #about {
   min-height: 100vh;
 }
 
+.iconxyz{
+  font-size: 4em;
+}
 
 
 
@@ -45,13 +48,42 @@ header, #about{
   display: block;
   z-index: 0;
   top: 0;
+  color: #DFDFDF;
  
-  background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
-background-size: 600% 600%;
+  background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 300% 300%;
+-webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
+}
+.navbar-custom{
+    content: '';
+    display: block;
+    position: fixed;
+  
+    top: 0;
+    background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 300% 300%;
+-webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
+}
 
--webkit-animation: AnimationName 25s ease infinite;
--moz-animation: AnimationName 25s ease infinite;
-animation: AnimationName 25s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
 }
 
 .modal-body .themed-text:before, .modal-body .themed-text:after{
@@ -63,42 +95,6 @@ animation: AnimationName 25s ease infinite;
   
   background: rgba(0, 0, 0, 0.05);
 }
-
-
-
-
-.navbar-custom{
-    content: '';
-    display: block;
-    position: fixed;
-  
-    top: 0;
-    background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
-background-size: 600% 600%;
-
--webkit-animation: AnimationName 25s ease infinite;
--moz-animation: AnimationName 25s ease infinite;
-animation: AnimationName 25s ease infinite;
-}
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
-}
-
-
 
 
 @keyframes themed {
@@ -221,7 +217,6 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  color: white;
 }
 header .container {
   padding-top: 80px;

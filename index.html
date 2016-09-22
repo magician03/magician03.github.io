@@ -23,22 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Josefin+Sans|Roboto:300,400|Open+Sans:300|Raleway:300" rel="stylesheet">
-     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,13 +36,16 @@
 <body id="page-top" class="index">
 
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -85,7 +73,7 @@
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
-                     <li class="page-scroll">
+                    <li class="page-scroll">
                         <a href="/blog">Blog</a>
                     </li>
                 </ul>
@@ -104,7 +92,7 @@
                     <div class="intro-text">
                         <span class="name">Diwakar Moturu</span>
 
-                        <div class="type-wrap" >
+                        <div class="type-wrap">
                             <div id="typed-strings">
                                 <p>code^300</p>
                                 <p>build^300</p>
@@ -117,7 +105,7 @@
                                 <p>write^300</p>
                                 <p>read^300</p>
                                 <p>eat^300</p>
-                                
+
                             </div>
                             <div id="typed-icons">
                                 <p><i class="devicon-nodejs-plain-wordmark"></i>^500</p>
@@ -217,18 +205,6 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                                
-                            <div class="caption-content">
-                                
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/portfolio/website/1.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -239,13 +215,26 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+
+                            <div class="caption-content">
+
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio/website/1.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/portfolio/iiitahacks/1.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/portfolio/p2p/1.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -255,7 +244,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/portfolio/judge/1.png" class="img-responsive" alt="">
+                        <img src="https://thumbs.dreamstime.com/x/open-source-software-word-cloud-14350805.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -271,16 +260,18 @@
                     <hr class="star-light">
                 </div>
             </div>
-            
-                
-                    
-                
-                
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p>Hi, I am Diwakar, 'magician03' on Github and other networks. I am Information Technology Undegrad studying at Indian Institute of Information Technology Allahabad, class of 2019. I am quick learner and love to code. I coded my first 'Hello World!' program in summer of 2015. I love to build the web and an aspiring Full-Stack Web Developer. I am a huge Open-Source enthusiast and contribute actively. In my leisure, I read tech-blogs and spend time surfing on YouTube. When I'm home, I spend most of my leisure time gardening or experimenting with sub-continental dishes. I am hugely inspired by Steve Jobs, Elon Musk and my Dad.</p>
-                    
-                </div>
-            
+
+
+
+
+
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>Hi, I am Diwakar, 'magician03' on Github and other networks. I am Information Technology Undegrad studying at Indian Institute of Information Technology Allahabad, class of 2019. I am quick learner and love to code. I coded my first 'Hello
+                    World!' program in summer of 2015 and fell in love with programming since then. I love to build the web and an aspiring Full-Stack Web Developer. I am a huge Open-Source enthusiast and contribute actively. In my leisure, I read tech-blogs and spend time surfing on YouTube. When
+                    I'm home, I spend most of my leisure time gardening or experimenting with sub-continental dishes. I am hugely inspired by Steve Jobs, Elon Musk and my Dad.</p>
+
+            </div>
+
         </div>
     </section>
 
@@ -369,7 +360,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                    <div class="fb-like" data-href="https://magician03.github.io/" data-width="400" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                        <div class="fb-like" data-href="https://magician03.github.io/" data-width="400" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                     </div>
                 </div>
             </div>
@@ -408,20 +399,19 @@
                             <h2>BlogSpace</h2><em>MultiUser Blogging Platform</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/blogspace/blogspace.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                <li><i class="devicon-python-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-bootstrap-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                            </ul>
+                            <p>A simple blogging platform for everyone to post and share their blogs. <br /> I built it using the 'Google WebApp2' python library for backend, BootStrap, CSS, HTML, JavaScript for FrontEnd and Google DataStore for Database management. User Accounts and Security is taken care of. Blogpost only take text without any images and stored as String in the DataStore. It is now in production on Google Cloud Platoform.</p>
+                            <p><b>Time Period</b>: <i>Summer 2016</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/blogspace-1803"><button type="button" class="btn btn-info">Source Code<i class="fa fa-code" aria-hidden="true"></i></button></a>
+                                <a href="http://blogspace-1803.appspot.com/" target="_blank"><button type="button" class="btn btn-info">Website <i class="fa fa-external-link" aria-hidden="true"></i>
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -445,20 +435,25 @@
                             <h2>Gather</h2><em>Cross Platform Event-Organisation services</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/gather/gather.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-bootstrap-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-php-plain colored iconxyz"></i></li>
+                                
+                                <li><i class="devicon-android-plain-wordmark colored iconxyz"></i></li>
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                                <li><i class="devicon-mysql-plain-wordmark colored iconxyz"></i></li>
+                                
+                            </ul>
+                            <p>Gather is an cross-platform Event-Organisation service where anyone can host their events, attend any events in their desired localities, and view all the events happening around them.<br /> The rudimentary version of this project is done HackInTheNorth hackathon organised by IIIT-Allahabad. Later enhanced and extended it to other platforms like Android and Messenger bots in another hackathon IIITA-Hacks organised by same college. It uses PHP as backend, built using MVC framework, MySQL for storing data and BootStrap for the front-end. It is also available in Google PlayStore. Sample service of the products(Web, Android) can be shown upon request as I host it for temporarily on sandboxed servers.</p>
+                             <p><b>Time Period</b>: <i>3 days (April 1-2, 2016; September 10, 2016)</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/gather"><button type="button" class="btn btn-info">Source Code<i class="fa fa-code" aria-hidden="true"></i></button></a>
+                                <a href="https://play.google.com/store/apps/details?id=gatherdiwakarvinay.cs.io.gather" target="_blank"><button type="button" class="btn btn-info">PlayStore <i class="fa fa-external-link" aria-hidden="true"></i>
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -482,20 +477,21 @@
                             <h2>IIIT-A Hacks Website</h2><em>Official website of Intra-College Hackathon</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/iiitahacks/iiitahacks.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-bootstrap-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                            </ul>
+                            <p> It is the official website of Intra-College hackathon. This is a static site with BootStrap, HTML, CSS, JS and various other JQuery plugins. The attractive color-changing background is done using CSS-KeyFrame Animation. The site also has Facebook like button embedded in it.</p>
+                            <p><b>Time Period</b>: <i>September  first week, 2016</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/iiitaHacks" target="_blank"><button type="button" class="btn btn-info">Source Code <i class="fa fa-code" aria-hidden="true"></i></button></a>
+                                <a href="https://geekhaven.iiita.ac.in/iiitahacks/" target="_blank"><button type="button" class="btn btn-info">Website <i class="fa fa-external-link" aria-hidden="true"></i>
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -519,20 +515,25 @@
                             <h2>Online Judge</h2><em>Google CodeJam style</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/judge/judge.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-bootstrap-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-php-plain colored iconxyz"></i></li>
+                                
+                                
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                                <li><i class="devicon-mysql-plain-wordmark colored iconxyz"></i></li>
+                                
+                            </ul>
+                            <p> Online Judge on the lines of Google CodeJam.<br /> This uses PHP for the backend, BootStrap, HTML, CSS, JS for front-end, MySQL for databases. Built on MVC framework. The output files are compared using their checksums. I built the entire website as a part of Tri-Hacker contest in our college.</p>
+                            <p><b>Time Period</b>: <i>April 2016</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/judge"><button type="button" class="btn btn-info">Source Code<i class="fa fa-code" aria-hidden="true"></i></button></a>
+                                
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -556,20 +557,25 @@
                             <h2>Youtube Instant</h2><em>Inspired from Google Instant Search</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/ytinstant/ytinstant.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <li><i class="devicon-nodejs-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                                
+                                <li><i class="devicon-react-original-wordmark colored iconxyz"></i></li>
+                            </ul>
+                            <p> Browse and play YouTube videos instalty like Google Instant Search. This uses React for component renderring in the views, WebPack-dev-server and Node for controller part. This doesnt use any Database, instead uses Youtube Search API for browing the YouTube. It consists of 3 major components, search bar, video-list and currently-playing video. Built this following a Udemy course on React.</p>
+                            <p><b>Time Period</b>: <i>Summer 2016</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/youtube_instant"><button type="button" class="btn btn-info">Source Code<i class="fa fa-code" aria-hidden="true"></i></button></a>
+                                
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -593,20 +599,25 @@
                             <h2>Personal Website</h2><em>Developer Portfolio cum Blog</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/website/1.png" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-bootstrap-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <li><i class="devicon-nodejs-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                                
+                                
+                            </ul>
+                            <p>My personal website cum Blog. The website is a simple static. Attractive background gradient animation is generated <a href="https://www.gradient-animator.com/"> here.</a>. WebPage also uses various JQuery plugins. My yet-to-start blog is hyper-linked in the floating nav-bar. The blog uses Harp as Static-site generator which in-turn is NodeJS based. All the articles are written in MarkDown format(Jade can also be used!). The site is hosted for free on Github Pages under user site.</p>
+                            <p><b>Time Period</b>: <i>August-September 2016</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/magician03.github.io"><button type="button" class="btn btn-info">Source Code<i class="fa fa-code" aria-hidden="true"></i></button></a>
+                                <a href="#" target="_blank"><button type="button" class="btn btn-info">Website <i class="fa fa-external-link" aria-hidden="true"></i>
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -615,7 +626,7 @@
             </div>
         </div>
     </div>
-     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -630,20 +641,24 @@
                             <h2>Finance & Trading</h2><em>Real-Time Trading with fake cash via Yahoo Finance API</em>
                             <hr class="star-primary">
                             <img src="img/portfolio/portfolio/finance/finance.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-html5-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-bootstrap-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark colored iconxyz"></i></li>
+                                <li><i class="devicon-php-plain colored iconxyz"></i></li>
+                                
+                                
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                                <li><i class="devicon-mysql-plain-wordmark colored iconxyz"></i></li>
+                                
+                            </ul>
+                            <p>This a coursework of Harvard CS50 PSet7. I should abide the Honor Code and couldnt reaval much of the details regarding this project. It uses PHP for backend, built on MVC framework, and HTML,CSS, JavaScript, BootStrap for front-end. All the stock values are real-time and fetched via Yahoo-Finance API, provided in PSet BoilerPlate. The source of the project is public, instead demo of the project can be shown upon request.</p>
+                            <p><b>Time Period</b>: <i>February 2016</i></p>
+                            <ul class="list-inline item-details">
+                                
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -664,23 +679,24 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>IIIITA Hacks Website</h2>
+                            <h2>PeerToPeer Chat</h2><em>Super secure P2P chat service.</em>
                             <hr class="star-primary">
-                            <img src="img/portfolio/portfolio/iiitahacks/iiitahacks.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <img src="img/portfolio/portfolio/p2p/1.png" class="img-responsive img-centered" alt="">
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+                                <li><i class="devicon-nodejs-plain-wordmark colored iconxyz"></i></li>
+                                
+                                <Li><i class="devicon-javascript-plain colored iconxyz"></i></Li>
+                                
+                                
+                                
+                            </ul>
+                            <p>Super secure chat service using Peer to Peer technology. Built with NodeJS and some NPM modules written by <a href="https://github.com/mafintosh"> Mafintosh</a>. This does not use any database and runs on command line interface. All the usernames are temporary and will be vanished after the session. It also support basic level group chat and indivial private chat. It does not contain logs of any conversation and is super secure for confidential messages.</p>
+                            <p><b>Time Period</b>: <i>August 2016</i></p>
+                            <ul class="list-inline item-details">
+                                <a href="https://github.com/magician03/P2P-Chat"><button type="button" class="btn btn-info">Source Code<i class="fa fa-code" aria-hidden="true"></i></button></a>
+                               
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -701,23 +717,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Online Judge</h2><em>Google CodeJam style</em>
+                            <h2>Open Sources</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/portfolio/judge/judge.jpg" class="img-responsive img-centered" alt="">
-                            <p class="themed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <img src="https://thumbs.dreamstime.com/x/open-source-software-word-cloud-14350805.jpg" class="img-responsive img-centered" alt="">
+                            
+                            <p> Along with all the personal projects, I also contribute actively to the open-source, mostly to the Technical society of our college. Currently, I am willing to contribute to open-source organisations which help in making the world a better place to live in. </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                
+</button></a>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -727,53 +734,78 @@
         </div>
     </div>
 
-   
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
 
     <script>
-    $(function(){
+        $(function() {
 
-        $("#typed").typed({
+            $("#typed").typed({
+                // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+                stringsElement: $('#typed-strings'),
+                typeSpeed: 30,
+                backDelay: 500,
+                loop: true,
+                contentType: 'html', // or text
+                // defaults to false for infinite loop
+                loopCount: false,
+                callback: function() {
+                    foo();
+                },
+                resetCallback: function() {
+                    newTyped();
+                }
+            });
+
+            $(".reset").click(function() {
+                $("#typed").typed('reset');
+            });
+
+        });
+
+        $("#typedIcons").typed({
             // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-            stringsElement: $('#typed-strings'),
-            typeSpeed: 30,
+            stringsElement: $('#typed-icons'),
+            typeSpeed: 3,
             backDelay: 500,
             loop: true,
             contentType: 'html', // or text
+            showCursor: false,
             // defaults to false for infinite loop
             loopCount: false,
-            callback: function(){ foo(); },
-            resetCallback: function() { newTyped(); }
+            callback: function() {
+                foo();
+            },
+            resetCallback: function() {
+                newTyped();
+            }
         });
 
-        $(".reset").click(function(){
-            $("#typed").typed('reset');
+        $(".reset").click(function() {
+            $("#typedIcons").typed('reset');
         });
 
-    });
 
-    $("#typedIcons").typed({
-        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-        stringsElement: $('#typed-icons'),
-        typeSpeed: 3,
-        backDelay: 500,
-        loop: true,
-        contentType: 'html', // or text
-        showCursor: false,
-        // defaults to false for infinite loop
-        loopCount: false,
-        callback: function(){ foo(); },
-        resetCallback: function() { newTyped(); }
-    });
+        function newTyped() { /* A new typed object */ }
 
-    $(".reset").click(function(){
-        $("#typedIcons").typed('reset');
-    });
-
-
-    function newTyped(){ /* A new typed object */ }
-
-    function foo(){ console.log("Callback"); }
-
+        function foo() {
+            console.log("Callback");
+        }
     </script>
 
 

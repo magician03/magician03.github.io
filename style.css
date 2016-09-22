@@ -40,9 +40,9 @@ body, .themed {
   background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
 background-size: 600% 600%;
 
--webkit-animation: AnimationName 25s ease infinite;
--moz-animation: AnimationName 25s ease infinite;
-animation: AnimationName 25s ease infinite;
+-webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
 }
 
 
@@ -52,31 +52,31 @@ animation: AnimationName 25s ease infinite;
   display: block;
   position: fixed;
   top: 0;
-  background: linear-gradient(49deg, #a24bcf, #4b79cf, #4bc5cf);
-background-size: 600% 600%;
+  background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+background-size: 300% 300%;
 
--webkit-animation: AnimationName 25s ease infinite;
--moz-animation: AnimationName 25s ease infinite;
-animation: AnimationName 25s ease infinite;
+-webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
 
   
   
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
 }
 @keyframes AnimationName { 
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
 }
 
 
@@ -298,7 +298,7 @@ ul#normal {
     transition: height 0.3s;
 }
 .header h1#logo {
-    display: inline=block;
+    display: inline-block;
     height: 50px;
     float: left;
     margin-left:20px;
@@ -313,7 +313,7 @@ ul#normal {
     transition: all 0.3s;
 }
 .header nav {
-    display: inline=block;
+    display: inline-block;
     float: right;
     margin-right:20px;
     width: 50%;
