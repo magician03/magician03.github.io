@@ -168,6 +168,15 @@ a.active {
   outline: none;
 }
 
+.modal-body p a,
+.modal-body p a:hover,
+.modal-body p a:focus,
+.modal-body p a:active,
+.modal-body p a.active {
+  color: #23527C;
+  outline: none;
+}
+
 
 h1,
 h2,
