@@ -37,11 +37,26 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Preloader_6.gif) center no-repeat rgba(255, 255, 255, 0.8);
+}
+    </style>
+    
+    
 
 </head>
 
 <body id="page-top" class="index">
-
+    <div class="se-pre-con"></div>
     <div id="fb-root"></div>
     <script>
         (function(d, s, id) {
@@ -129,7 +144,7 @@
                             </div>
                             <span id="typing">I <span id="typed" style="white-space:pre;"></span> stuff</span>
                         </div>
-                        <span id="skills">Web Development; UI-Design; Open Sources; Algorithms;</span>
+                        <span id="skills">Web Development | UI-Design | Open Sources | Algorithms</span>
                         <ul id="skillIcons">
                             <li><span id="typedIcons" style="white-space:pre;"></span></li>
                         </ul>
@@ -179,7 +194,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/portfolio/gather/1.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/portfolio/gather/4.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -274,9 +289,9 @@
 
 
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>Hi, I am Diwakar, 'magician03' on Github and other networks. I am Information Technology Undegrad studying at Indian Institute of Information Technology Allahabad, class of 2019. I am quick learner and love to code. I coded my first 'Hello
+                <p>Hi, I am Diwakar, 'magician03' on Github and other networks. I am Information Technology Undergrad studying at Indian Institute of Information Technology Allahabad, class of 2019. I am quick learner and love to code. I coded my first 'Hello
                     World!' program in summer of 2015 and fell in love with programming since then. I love to build the web and an aspiring Full-Stack Web Developer. I am a huge Open-Source enthusiast and contribute actively. In my leisure, I read tech-blogs and spend time surfing on YouTube. When
-                    I'm home, I spend most of my leisure time gardening or experimenting with sub-continental dishes. I am hugely inspired by Steve Jobs, Elon Musk and my Dad.</p>
+                    I'm home, I spend most of my leisure time gardening or experimenting with regional cuisines. I am hugely inspired by Steve Jobs, Elon Musk and my Dad.</p>
 
             </div>
 
@@ -759,6 +774,15 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    
+    <script>
+        	// Wait for window load
+	$(window).on('load' , function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script>
 
     <script>
         $(function() {

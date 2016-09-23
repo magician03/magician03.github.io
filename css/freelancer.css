@@ -168,11 +168,11 @@ a.active {
   outline: none;
 }
 
-.modal-body p a,
-.modal-body p a:hover,
-.modal-body p a:focus,
-.modal-body p a:active,
-.modal-body p a.active {
+.modal-body a,
+.modal-body a:hover,
+.modal-body a:focus,
+.modal-body a:active,
+.modal-body a.active {
   color: #23527C;
   outline: none;
 }
@@ -640,11 +640,11 @@ button.btn.btn-success.btn-lg{
   cursor: pointer;
 }
 .portfolio-modal .close-modal:hover {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .portfolio-modal .close-modal .lr {
   height: 75px;
-  width: 1px;
+  width: 2px;
   margin-left: 35px;
   background-color: #2C3E50;
   transform: rotate(45deg);
@@ -656,7 +656,7 @@ button.btn.btn-success.btn-lg{
 }
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
-  width: 1px;
+  width: 2px;
   background-color: #2C3E50;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
