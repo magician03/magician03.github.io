@@ -706,6 +706,10 @@ button.btn.btn-success.btn-lg{
     100% { opacity:1; }
 }
 
+ul .list-inline .item-details {
+  font-size: 10px;
+}
+
 font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
