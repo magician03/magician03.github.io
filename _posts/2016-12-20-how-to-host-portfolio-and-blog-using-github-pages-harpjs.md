@@ -6,8 +6,8 @@ date: 2016-12-20 12:00:00
 author:     "Diwakar"
 header-img: "https://source.unsplash.com/DtDlVpy-vvQ/1900x870"
 tags:
-  - Web-Dev
-  - Random
+  - Web/App Dev
+
 ---
 
 When I first started Web Development, like everyone else, I also wished for an

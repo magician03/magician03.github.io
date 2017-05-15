@@ -5,7 +5,7 @@ date: 2017-01-05
 author:     "Diwakar"
 header-img: "https://source.unsplash.com/BW0vK-FA3eg/1900x870"
 tags:
-  - Web-Dev
+  - Web/App Dev
   - Linux
 
 ---
