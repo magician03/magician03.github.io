@@ -59,4 +59,4 @@ Integrating SauceLabs and TravisCI enables a completely automated build on Travi
 
 
 
-Finally, I am very excited to be a part such large organisation with global appeal and being the sole GSoC selection, a bit tensed too. However, with the very helpful, supportive Dev Team I am confident and optimistic. Looking forward for great experiences this summer 2017.
+Finally, I am very excited to be a part of such large organisation with global appeal and being the sole GSoC selection, a bit tensed too. However, with the very helpful, supportive Dev Team I am confident and optimistic. Looking forward for great experiences this summer 2017.
