@@ -1,9 +1,3 @@
-# HuxBlog Boilerplate
+# Diwakar Moturu's Blog
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
-
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
-
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
-
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
+##### This blog is built upon [Hux Blog](https://github.com/Huxpro/huxpro.github.io) Boilerplate with many customisations and additions, all documentation is over there!
